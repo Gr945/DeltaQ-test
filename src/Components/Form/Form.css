@@ -1,0 +1,53 @@
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-0.5rem);
+        max-height: 0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        max-height: 250px;
+    }
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 20px;
+    padding: 50px 100px;
+    font-weight: 500;
+}
+
+.header {
+    font-size: 20px;
+}
+
+.firstInput {
+    width: 100%;
+}
+
+input {
+    min-height: 40px;
+    width: 50%;
+}
+
+p {
+    font-size: 18px;
+    margin: 0;
+}
+
+.menu {
+    animation: fadeInDown 300ms ease-in 0s 1 forwards;
+}
+
+.element {
+    cursor: pointer;
+}
+
+.element:hover {
+    background: black;
+    color: white;
+}
